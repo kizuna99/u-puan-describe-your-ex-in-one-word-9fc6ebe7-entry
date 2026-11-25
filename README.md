@@ -4,13 +4,13 @@
 [![rank](https://make.fun/badge/u-puan-describe-your-ex-in-one-word-9fc6ebe7/kizuna99/u-puan-describe-your-ex-in-one-word-9fc6ebe7-entry/rank.svg)](https://make.fun/bounty/u-puan-describe-your-ex-in-one-word-9fc6ebe7/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-puan-describe-your-ex-in-one-word-9fc6ebe7)
 [![reward](https://make.fun/badge/u-puan-describe-your-ex-in-one-word-9fc6ebe7/kizuna99/u-puan-describe-your-ex-in-one-word-9fc6ebe7-entry/reward.svg)](https://make.fun/bounty/u-puan-describe-your-ex-in-one-word-9fc6ebe7?utm_source=github&utm_medium=readme&utm_campaign=u-puan-describe-your-ex-in-one-word-9fc6ebe7)
 
-A tiny program that writes exactly one word to `/output/entry.txt` — the
-one-word verdict on an ex: **Rebuffering**. He never actually arrived:
-every conversation spun, stalled, restarted, and stalled again, and no
-matter how many chances the stream got, it never once played. The word
-was chosen by a 16-candidate criteria-ordered tournament against the
-judge's published criteria (instant ex verdict, comic punch, surprise,
-craft, recognition), then refined over four iterations — the `Re-`
-prefix beat plain `Buffering` because the repeat loop is the joke.
-Output is byte-exact: 11 UTF-8 bytes, no trailing newline. Run it with
-`python3 main.py`.
+This entry answers the prompt with a single word — **Rebuffering** —
+written by `main.py` to `/output/entry.txt` as exactly 11 UTF-8 bytes
+with no trailing newline. The image is the familiar loading spinner:
+he was technically present the whole time, yet nothing ever actually
+started; every attempt circled, froze, began again from the top, and
+froze in the same place, so the relationship spent its entire runtime
+waiting on a picture that never resolved. The program validates the
+word against the gate limits (1–111 characters, not whitespace-only,
+exactly one token) before writing, then reads the file back and asserts
+the bytes on disk match what it intended. Run it with `python3 main.py`.
